@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add to cart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>  
+ 
+	<div class="container mt-100">
+		<div class="row">
+			<div class="col-md-5">
+				<!-- product short details information -->
+				<div class="p-short-desc">
+					<form>
+						<div class="product-metadata">
+							<small><b>$1.99</b> / Sq Ft <b>$30.85</b> / box · covers 15.5 Sq Ft</small>
+						</div>
+						<h5>How much will you need?</h5>
+						<div class="form-group">
+							<input type="" name="" class="ps-input" placeholder="Enter Sq Ft" id="sq-ft" onkeyup="sqrtVal()">
+							<small class="or"> OR </small>
+							<button class="ps-input" id="cal-sq-ft">Calculate my Square Footage</button>
+						</div>
+						<div class="form-group text-right">
+							<input type="checkbox" name="" value="on" id="if-check" onclick="sqrtVal()">
+							<label>Add 10% extra for waste</label>
+						</div>
+
+						<!-- output div start -->
+						<div class="output-div my-24" id="makelive">
+							<div>
+								<span>Boxes</span>
+								<span class="input-number-decrement" id="vdec" onclick="vincf(document.getElementById('show_num').value,'dec')">–</span>
+								<input class="input-number" type="text" min="1" id="show_num" value="">
+								<span class="input-number-increment" id="vinc" onclick="vincf(document.getElementById('show_num').value,'inc')">+</span>
+								<span class="sqrt-num">
+									covers <span>0</span> square feet
+								</span>
+								<span class="float-right text-right sqrt-price">$<span >00</span></span>
+							</div>
+						</div>
+						<!-- output div end -->
+
+						<input type="submit" name="" id="add-to-cart-now" value="Add to Cart" class="submit-btn">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<!-- product photos and gallery -->
+			</div>
+		</div>
+	</div>
+
+	<div id="calculator">
+		<div class="cal-wrapper">
+			<div class="cal-header">
+				Calculate my Square Footage
+				<span id="calclose">X</span>
+			</div>
+			<div class="cal-body">
+				<p>To determine the square footage of a square or rectangular room, measure the length and width of the room in feet or inches and enter the values in Area 1 of the calculator below.</p>
+				<div class="input-area" id="area1">
+					<h3>Area 1</h3>
+					<input type="" name="" placeholder="Length (ft)" class="c1">
+					<input type="" name="" placeholder="Length (in)" class="c2">
+					X
+					<input type="" name="" placeholder="Width (ft)" class="c3">
+					<input type="" name="" placeholder="Width (in)" class="c4">
+				</div>
+				<div class="add-another">
+					+ Add Another Area
+				</div>
+				<div class="input-area" id="copy">
+					<h3>Ánother Area</h3>
+					<input type="" name="" placeholder="Length (ft)" class="c1">
+					<input type="" name="" placeholder="Length (in)" class="c2">
+					X
+					<input type="" name="" placeholder="Width (ft)" class="c3">
+					<input type="" name="" placeholder="Width (in)" class="c4">
+				</div>
+				<div style="margi: 16px 0;">
+					<button class="cal-btn" onclick="calculateSQFT()">Calculate</button>
+				</div>
+				<div class="cal-answer">
+					<h2>You will need <span id="nsqft"></span> sq ft</h2>
+					<!-- <input type="checkbox" id="extraid" name="" value="15" onclick="recal()"> -->
+					<!-- <label>Add 15% extra for waste</label> -->
+					<div class="go-checkout">
+						<h4><span id="nbox"></span> Boxes • covers <span id="nsqft2"></span> Sq Ft</h4>
+						<button class="cal-btn" id="useamount" onclick="update_box()">Use this Amount</button>
+					</div>
+				</div>
+				<div class="how-to">
+					<h3>How To Measure Multiple Spaces<span class="float-right">+</span></h3>
+					<p class="how-details">To determine the square footage of a square or rectangular room, measure the length and width of the room in feet or inches and enter the values in Area 1 of the calculator below. For irregularly shaped areas or multiple rooms, it is helpful to draw a diagram and divide the room up into sections. Treat each section as a separate area, as in this illustration. Input the measurements of each area below to see the total SQFT needed. rooms diagram</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="numberfield.js"></script>
+<script type="text/javascript" src="calculate.js"></script>
+</body>
+</html>

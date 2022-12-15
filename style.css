@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	align-items: center;
+}
+.col-md-5{
+	flex-basis: 40%;
+}
+.col-md-7{
+	flex-basis: 60%;
+}
+.mt-100{
+	margin-top: 100px;
+}
+input[placeholder] {
+    text-overflow: ellipsis;
+    padding-left: 16px;
+}
+.text-right{
+	text-align: right;
+}
+.my-24{
+	margin: 24px 0;
+}
+.float-right{
+	float: right;
+}
+.output-div{display: block; opacity: 1;}
+.product-metadata small{margin-bottom: 16px;display: inline-block;font-size: 16px;}
+.p-short-desc h5{position: relative;font-size: 1.1rem;font-weight: 500;background: #f4f4f4;padding: 11px 22px;margin-bottom: 32px;}
+.form-group #sq-ft{width: 36%;height: 50px;padding: 0px 0px 0 20px;border: 1px solid #e2e4e5;font-size: 16px!important;}
+.form-group .or{padding: 0 5px;font-size: 14px;font-weight: 500;}
+.form-group #cal-sq-ft{font-size: 1rem;width: 50%;height: 52px;border: 1px solid #e2e4e5;padding-left: 25px;padding-right: 25px;background: #fff;float: right;}
+.form-group{margin-bottom: 24px;}
+.submit-btn{padding: 16px;display: block;width: 100%;font-size: 16px;border: none;background: #fcd731;cursor: pointer;}
+
+
+.output-div{position: relative;background: #f4f4f4;padding: 11px 22px;}
+.sqrt-price{margin-top: 12px;font-weight: 700;font-size: 18px;}
+.sqrt-num{font-size: 12px;margin-left: 6px;}
+
+.input-number{width: 30px;padding: 0 12px;vertical-align: top;text-align: center;outline: none;	}
+.input-number,.input-number-decrement,.input-number-increment{border: 1px solid #ccc;height: 40px;user-select: none;}
+.input-number-decrement,.input-number-increment{display: inline-block;width: 30px;line-height: 38px;background: #f1f1f1;color: #444;text-align: center;font-weight: bold;cursor: pointer;}
+.input-number-decrement:active,.input-number-increment:active{background: #ddd} 
+.input-number-decrement{border-right: none;border-radius: 4px 0 0 4px;}
+.input-number-increment{border-left: none;border-radius: 0 4px 4px 0;}
+
+#calculator{display: none;}
+#calculator{width: 100%;background: rgba(0,0,0,0.8);position: absolute;top: 0px;height: 100%;}
+#calculator .cal-wrapper{width: 600px;margin: 100px auto;background: white;}
+#calculator .cal-header{color: #fff;background: #2d2d2d;height: 52px;line-height: 50px;font-size: 1rem;padding-left: 55px;padding-right: 40px;text-align: left;font-weight: 600;}
+#calculator .cal-header span{float: right;cursor: pointer;}
+#calculator .cal-body{background: white;padding: 42px 60px}
+#calculator .cal-body p{margin-bottom: 18px;}
+#calculator .input-area input{width: 80px;padding: 12px;}
+#calculator .input-area{margin-bottom: 18px;}
+#calculator .cal-btn{padding: 16px;display: block;width: 100%;font-size: 16px;border: none;background: #fcd731;cursor: pointer;}
+#calculator .add-another{text-decoration: underline;margin: 12px 0 24px 0;cursor: pointer;}
+#calculator .input-area h3{margin-top: 16px;} 
+
+.how-to{margin-top: 16px;}
+.how-to h3{font-size: 16px;margin-bottom: 16px;cursor: pointer;}
+.how-to h3:hover{text-decoration: underline;}
+.how-to .how-details{display: none;}
+
+.cal-answer{margin: 12px 0;text-align: center;display: none;}
+.cal-answer h2{font-size: 18px;margin-bottom: 16px;}
+.cal-answer .go-checkout{background: #ececec;margin-top: 12px;padding: 20px;}
+.cal-answer .go-checkout h4{margin-bottom: 12px;}
+.cal-answer .go-checkout span{font-weight: bold;}
+
+
+.output-div{display: none;}
